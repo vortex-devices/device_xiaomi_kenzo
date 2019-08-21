@@ -20,9 +20,8 @@ $(call inherit-product, device/xiaomi/kenzo/full_kenzo.mk)
 # Inherit some common Vortex OS stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
-# Inherit some common Vortex stuff.
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_GAPPS_ARCH := arm64
+#OFFICIAL TAG
+export CUSTOM_BUILD_TYPE=OFFICIAL
 
 # Set those variables here to overwrite the inherited values.
 BOARD_VENDOR := Xiaomi
